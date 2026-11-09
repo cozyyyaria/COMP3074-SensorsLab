@@ -1,0 +1,25 @@
+COMP3074 — Lab 7 Sensor Availability Note
+==========================================
+
+Test Device: Android Emulator (Pixel 6, API 35)
+
+AMBIENT TEMPERATURE — NOT AVAILABLE
+The ambient temperature sensor was not present on the emulator. The app
+correctly displays "Temperature sensor is not available on this device."
+rather than crashing. This is expected — the hardware does not exist on
+most standard emulator configurations or many physical phones.
+
+GYROSCOPE — AVAILABLE
+The gyroscope was available on the emulator. At rest, values were near
+zero (normal sensor noise). Using the emulator's Extended Controls >
+Virtual Sensors, rotation around the Y axis produced gyroY readings of
+approximately -1.2 rad/s, confirming real-time UI updates via the
+registered SensorEventListener.
+
+ACCELEROMETER — AVAILABLE (Part 18 optional extension)
+Available on the emulator. At rest in portrait orientation:
+   X ≈  0.02 m/s²
+   Y ≈ -0.14 m/s²
+   Z ≈  9.81 m/s²   (gravity)
+The Z-axis value near 9.8 represents gravitational acceleration. Tilting
+the virtual device redistributed this force across all three axes.

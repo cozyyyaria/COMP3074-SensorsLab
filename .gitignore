@@ -1,0 +1,24 @@
+# Android build & cache
+.gradle/
+build/
+app/build/
+*.iml
+.idea/
+local.properties
+.cxx/
+captures/
+
+# Docs, PDFs and screenshots as requested
+*.pdf
+*.docx
+*.jpg
+*.jpeg
+*.png
+screenshot_emulator.jpg
+screenshot_motion.jpg
+SensorsLab.pdf
+COMP3074_Lab7_Submission.docx
+
+# OS metadata
+.DS_Store
+Thumbs.db
